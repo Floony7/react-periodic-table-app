@@ -31679,18 +31679,8 @@ function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
-function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n  display: inline-block;\n  margin: 5px;\n  background-color: #e3e3e3;\n  padding: 0.5rem;\n"]);
-
-  _templateObject2 = function _templateObject2() {
-    return data;
-  };
-
-  return data;
-}
-
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  padding: 1rem;\n  width: 100%;\n  min-height: 60vh;\n  background-color: rgba(255, 255, 255, 0.5);\n  border-radius: 5px;\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: inline-block;\n  margin: 5px;\n  background-color: #e3e3e3;\n  padding: 0.5rem;\n  /* clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); */\n  transform: skewX(-10deg);\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -31702,10 +31692,15 @@ function _templateObject() {
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 var endpoint = "https://neelpatel05.pythonanywhere.com/";
+/* const ContainerDiv = styled.div`
+  padding: 1rem;
+  width: 100%;
+  min-height: 60vh;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+` */
 
-var ContainerDiv = _styledComponents.default.div(_templateObject());
-
-var StyledLi = _styledComponents.default.li(_templateObject2());
+var StyledLi = _styledComponents.default.li(_templateObject());
 
 var elemReducer = function elemReducer(state, action) {
   if (action.type === "SET_DATA") {
@@ -31901,7 +31896,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52067" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55785" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

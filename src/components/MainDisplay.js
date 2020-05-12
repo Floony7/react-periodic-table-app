@@ -5,19 +5,21 @@ import styled from "styled-components"
 
 const endpoint = "https://neelpatel05.pythonanywhere.com/"
 
-const ContainerDiv = styled.div`
+/* const ContainerDiv = styled.div`
   padding: 1rem;
   width: 100%;
   min-height: 60vh;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 5px;
-`
+` */
 
 const StyledLi = styled.li`
   display: inline-block;
   margin: 5px;
   background-color: #e3e3e3;
   padding: 0.5rem;
+  /* clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); */
+  transform: skewX(-10deg);
 `
 
 const elemReducer = (state, action) => {
