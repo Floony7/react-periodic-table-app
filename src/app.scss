@@ -1,0 +1,17 @@
+@import "./styles/_config";
+@import "./styles/_layout";
+
+body {
+  background: rgb(6, 242, 101);
+  background: linear-gradient(90deg, rgba(6, 242, 101, 1) 14%, rgba(145, 68, 238, 1) 100%);
+  font-family: "Lalezar", cursive;
+}
+
+h1 {
+  color: $secondaryColor;
+  font-family: "Neuton", serif;
+}
+
+.nostyle {
+  list-style-type: none;
+}
